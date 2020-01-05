@@ -56,5 +56,9 @@ var handlers = { // handle different events such as clicks
 	},
 	toggleAll: function() {
 		list.toggleAll();
+	},
+	addTodo: function() {
+		list.addTodo(document.getElementById('addTodoTextInput').value);
+		document.getElementById('addTodoTextInput').value = '';
 	}
 };
