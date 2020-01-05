@@ -50,14 +50,11 @@ var list = {
     }
 };
 
-var displayTodosButton = document.getElementById('displayTodosButton');
-
-displayTodosButton.addEventListener('click', function() {
-	list.displayTodos();
-})
-
-var toggleAllButton = document.getElementById('toggleAllButton');
-
-toggleAllButton.addEventListener('click', function() {
-	list.toggleAll();
-})
+var handlers = { // handle different events such as clicks
+	displayTodos: function () {
+		list.displayTodos();
+	},
+	toggleAll: function() {
+		list.toggleAll();
+	}
+};
